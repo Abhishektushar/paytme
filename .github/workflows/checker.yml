@@ -1,0 +1,26 @@
+name : check build of PR
+
+on : 
+  pull_request:
+    branches:
+      - master
+      -  main
+
+jobs :
+  build :
+    name : Build the Project
+    runs-on : ubuntu-latest
+    steps : 
+      - uses : actions/checkout@v3
+      - name : Use Node.js
+        uses : actions/setup-node@v3
+        with : 
+          node-version : '20'
+      - name : Install Dependencies
+        run : npm install 
+
+      - name : Genrate 
+      - name : Run Buil
+        run : npm run build
+    
+
