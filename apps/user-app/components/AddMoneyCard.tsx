@@ -13,6 +13,10 @@ const SUPPORTED_BANKS = [{
 }, {
     name: "Axis Bank",
     redirectUrl: "https://www.axisbank.com/"
+},
+{
+    name: "ICICI Bank",
+    redirectUrl: "https://www.icicibank.com/"
 }];
 
 export const AddMoney = () => {
